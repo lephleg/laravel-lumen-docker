@@ -27,7 +27,7 @@ This will create a dockerized stack for a Laravel/Lumen application, consisted o
 
 **Prerequisites:** 
 
-* Depending on your OS, the appropriate version of Docker Community Edition has to be installed on your machine.  ([Download Docker Community Edition](https://www.docker.com/community-edition#/download))
+* Depending on your OS, the appropriate version of Docker Community Edition has to be installed on your machine.  ([Download Docker Community Edition](https://hub.docker.com/search/?type=edition&offering=community))
 
 **Installation steps:** 
 
