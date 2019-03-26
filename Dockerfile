@@ -34,6 +34,10 @@ RUN apt-get install -y \
     php7.2-json \
     php7.2-xml
 
+# Install NPM and Node.js
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN apt-get install -y nodejs 
+
 #------------- FPM & Nginx configuration ----------------------------------------------------
 
 # Config fpm to use TCP instead of unix socket
