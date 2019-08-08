@@ -69,3 +69,14 @@ This will create a dockerized stack for a Laravel/Lumen application, consisted o
     ```
 
 5. That's it! Navigate to [http://localhost](http://localhost) to access the application.
+
+**Default configuration values** 
+
+The following values should be replaced in your `.env` file if you're willing to keep them as defaults:
+    
+    DB_HOST=mysql
+    DB_PORT=3306
+    DB_DATABASE=appdb
+    DB_USERNAME=user
+    DB_PASSWORD=<myuserpass>
+    
