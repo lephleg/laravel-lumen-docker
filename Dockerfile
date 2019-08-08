@@ -43,6 +43,7 @@ RUN apt-get install -y nodejs
 
 # Config fpm to use TCP instead of unix socket
 ADD resources/www.conf /etc/php/7.2/fpm/pool.d/www.conf
+RUN mkdir -p /var/run/php
 
 # Install Nginx
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABF5BD827BD9BF62
