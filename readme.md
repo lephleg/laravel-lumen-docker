@@ -78,5 +78,5 @@ The following values should be replaced in your `.env` file if you're willing to
     DB_PORT=3306
     DB_DATABASE=appdb
     DB_USERNAME=user
-    DB_PASSWORD=<myuserpass>
+    DB_PASSWORD=myuserpass
     
