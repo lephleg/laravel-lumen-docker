@@ -5,7 +5,7 @@
 #------------- Setup Environment -------------------------------------------------------------
 
 # Pull base image
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 # Install common tools 
 RUN apt-get update
@@ -26,23 +26,23 @@ WORKDIR /var/www/html
 RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 RUN apt update
 RUN apt-get install -y \
-    php7.2-fpm \ 
-    php7.2-common \ 
-    php7.2-curl \ 
-    php7.2-mysql \ 
-    php7.2-mbstring \ 
-    php7.2-json \
-    php7.2-xml \
-    php7.2-bcmath
+    php7.4-fpm \ 
+    php7.4-common \ 
+    php7.4-curl \ 
+    php7.4-mysql \ 
+    php7.4-mbstring \ 
+    php7.4-json \
+    php7.4-xml \
+    php7.4-bcmath
 
 # Install NPM and Node.js
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install -y nodejs 
 
 #------------- FPM & Nginx configuration ----------------------------------------------------
 
 # Config fpm to use TCP instead of unix socket
-ADD resources/www.conf /etc/php/7.2/fpm/pool.d/www.conf
+ADD resources/www.conf /etc/php/7.4/fpm/pool.d/www.conf
 RUN mkdir -p /var/run/php
 
 # Install Nginx
