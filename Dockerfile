@@ -14,6 +14,10 @@ RUN apt-get install -y wget curl nano htop git unzip bzip2 software-properties-c
 # Set evn var to enable xterm terminal
 ENV TERM=xterm
 
+# Set timezone to UTC to avoid tzdata interactive mode during build
+ENV TZ=Etc/UTC
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 # Set working directory
 WORKDIR /var/www/html
 
