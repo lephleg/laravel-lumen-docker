@@ -74,9 +74,12 @@ This will create a dockerized stack for a Laravel/Lumen application, consisted o
 
 The following values should be replaced in your `.env` file if you're willing to keep them as defaults:
     
-    DB_HOST=mysql
-    DB_PORT=3306
-    DB_DATABASE=appdb
-    DB_USERNAME=user
-    DB_PASSWORD=myuserpass
+```
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=db
+DB_USERNAME=dbuser
+DB_PASSWORD=pw
+```
     
